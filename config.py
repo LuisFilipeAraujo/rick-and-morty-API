@@ -2,7 +2,8 @@ import os
 
 
 class Config(object):
-    TEST = True
+    TEST = False
+    DEBUG = False
 
 
 class ProductionConfig(Config):
@@ -12,3 +13,4 @@ class ProductionConfig(Config):
 class DevelopmentConfig(Config):
     DATABASE_URI = "sql:///memory"
     TESTING = True
+    DEBUG = True
