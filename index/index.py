@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 index_blueprint = Blueprint("index", __name__)
 

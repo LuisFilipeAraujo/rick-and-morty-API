@@ -1,6 +1,10 @@
 from flask import Flask
 from index import index_blueprint
 
+from flask_sqlalchemy import SQLAlchemy
+
+database = SQLAlchemy()
+
 
 def main():
     application = Flask(__name__)
